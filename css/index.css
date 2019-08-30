@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+}
+
+body {
+  background-color: #0b234a;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  padding: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  font-size: 40px;
+}
+
+header img {
+  width: 12%;
+  float: left;
+}
+
+.menu-izq {
+  float: right;
+  padding-right: 3%;
+}
+
+.main-container {
+  background-color: green;
+}
+
+main {
+  overflow: hidden;
+}
+
+.nombre {
+  color: white;
+  font-size: 58px;
+  padding-top: 12%;
+  padding-left: 3%;
+  float: left;
+  width: 50%;
+  background-color: red;
+  }
+
+.redes {
+  float: right;
+  width: 50%;
+  padding-right: 3%;
+  font-size: 150px;
+  background-color: violet;
+  margin: 0 auto;
+}
