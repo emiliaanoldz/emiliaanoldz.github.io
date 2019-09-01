@@ -3,56 +3,73 @@
   padding: 0px;
   box-sizing: border-box;
   transition: all 0.3s ease-in;
+  color: white;
 }
 
 body {
   background-color: #0b234a;
 }
 
-header {
-  background-color: white;
-  width: 100%;
-  position: fixed;
-  padding: 5px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
-  font-size: 40px;
-}
-
-header img {
-  width: 12%;
-  float: left;
-}
-
-.menu-izq {
-  float: right;
-  padding-right: 3%;
-}
-
-.main-container {
-  background-color: green;
-}
-
-main {
+.container {
+  border: solid black 2px;
   overflow: hidden;
 }
 
 .nombre {
-  color: white;
-  font-size: 58px;
-  padding-top: 12%;
-  padding-left: 3%;
+  height: 100vh;
+  font-size: 40px;
   float: left;
   width: 50%;
-  background-color: red;
-  }
+}
 
-.redes {
+.contacto h2 {
+  justify-content: center;
+  display: flex;
+}
+
+.contacto {
+  justify-content: center;
   float: right;
   width: 50%;
-  padding-right: 3%;
-  font-size: 150px;
-  background-color: violet;
-  margin: 0 auto;
+}
+
+form {
+  font-size: 30px;
+}
+
+form input {
+}
+
+.contacto input {
+  padding: 8px;
+}
+
+#button {
+  margin-top: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
