@@ -1,15 +1,18 @@
-a {
-  color: black;
+.primera {
+  min-height: 100vh;
 }
 
-a:hover {
-  text-decoration: none;
-  color: white;
+.left {
+  width: 100vw;
+  justify-content: flex-end;
+  display: flex;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  color: black;
-  text-decoration: none;
+.left img {
+  width: 50vw;
+  min-height: 100vh;
+}
+
+.header .navbar {
+  background-color: transparent !important;
 }
