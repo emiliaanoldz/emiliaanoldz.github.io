@@ -1,17 +1,7 @@
-.primera {
-  min-height: 100vh;
+.primera img {
+  width: 100vh;
 }
 
-.left {
-  width: 100vw;
-  justify-content: flex-end;
-  display: flex;
-}
-
-.left img {
-  width: 50vw;
-  min-height: 100vh;
-}
 
 .header .navbar {
   background-color: transparent !important;
