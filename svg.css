@@ -6,4 +6,25 @@
 
 body {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  stroke-dasharray: 5481.703125px;
+  stroke-dashoffset: 5481.703125px;
+  animation: line-anim 5s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: white;
+  }
 }
