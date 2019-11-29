@@ -5,35 +5,90 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/favicon.png">
     <title>Emiliano Vargas</title>
   </head>
   <body>
-    <div class="primera">
-      <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Emiliano</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Emiliano</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="first">
+      <div class="img">
+      </div>
+
+      <div class="titles" data-aos="fade-right">
+        <h2>Hola!</h2>
+        <h1>Soy Emiliano</h1>
+        <h2>Full Stack Web Developer</h2>
+      </div>
+
+      <div class="arrow">
+        <a href="#second"><ion-icon name="arrow-round-down" size="large"></ion-icon></a>
+      </div>
+    </div>
+
+    <div class="content" id="second">
+      <div class="second-about-me">
+        <h2>Sobre mi</h2>
+        <p>Me considero una persona dinámica y creativa, con facilidad de adapatación y capacidad de trabajar en equipo, con iniciativa para resolver problemas eficientemente y lograr las metas pactadas.</p>
+      </div>
+
+      <div class="second-cards">
+        <h2>Full Stack Web Developer</h2>
+        <p>Como desarrolador web, estuve disfrutando traer conceptos de diseño a la vida a través de HTML/CSS y JS. Poniendo especial atencion en diseños "mobile friendly and pixel perfect".</p>
+        <h2>Lenguajes que hablo:</h2>
+          <div class="badges">
+            <h4><span class="badge badge-secondary">HTML & CSS</span></h4>
+            <h4><span class="badge badge-secondary">PHP</span></h4>
+            <h4><span class="badge badge-secondary">Javascript</span></h4>
+            <h4><span class="badge badge-secondary">MySQL</span></h4>
           </div>
-        </nav>
-      </header>
-        <img src="img/bg-header.jpg" alt="Building">
+        <h2>Herramientas:</h2>
+          <div class="badges">
+            <h4><span class="badge badge-secondary">Git</span></h4>
+            <h4><span class="badge badge-secondary">MySQL Workbench</span></h4>
+            <h4><span class="badge badge-secondary">Atom/VSCode</span></h4>
+            <h4><span class="badge badge-secondary">OOP</span></h4>
+            <h4><span class="badge badge-secondary">SCRUM</span></h4>
+          </div>
+        <h2>Frameworks:</h2>
+          <div class="badges">
+            <h4><span class="badge badge-secondary">Laravel</span></h4>
+            <h4><span class="badge badge-secondary">Bootstrap</span></h4>
+          </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Contacto</h2>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
