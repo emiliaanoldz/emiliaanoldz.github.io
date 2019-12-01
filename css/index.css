@@ -13,6 +13,10 @@ header {
   z-index: 10;
 }
 
+.container {
+	font-family: 'Montserrat', sans-serif;
+}
+
 .first{
   height: 100vh;
   position: relative;
@@ -36,6 +40,12 @@ header {
   top: 40%;
 	left: 5%;
   max-width: 90vw;
+	font-family: 'Montserrat light', sans-serif;
+}
+
+.titles h1 {
+	font-family: 'Montserrat 700', sans-serif;
+	font-size: 4em;
 }
 
 .arrow {
@@ -71,7 +81,8 @@ header {
 }
 
 footer {
-	background-color: brown;
+	background-color: rgba(227, 227, 227, 1.0);
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Floating Animation */
