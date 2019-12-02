@@ -1,18 +1,49 @@
-var formulario = document.getElementsByClassName('form-control');
-var elementos = formulario.elements;
-var boton = document.getElementsByClassName('btn');
+var nombre = document.querySelector('#name');
+var nombrefeedback = document.querySelector('#nameFeedback');
+var email = document.querySelector('#email');
+var emailfeedback = document.querySelector('#emailFeedback');
+var mensaje = document.querySelector('#mensaje');
+var mensajefeedback = document.querySelector('#mensajeFeedback');
+var formulario = document.querySelector('#theForm');
+var formularioFeedback = document.querySelector('#formularioFeedback');
 
-var validarNombre = function(e){
-  if (formulario.name.value === ""){
-    alert("nombre as vacio");
-    e.preventDefault();
+nombre.onblur = function () {
+  if (this.value.trim() == '') {
+    this.classList.add('is-invalid');
+    nombrefeedback.style.display = "inherit";
+  }
+  else {
+    this.classList.remove('is-invalid');
+    nombrefeedback.style.display = "none";
   }
 }
 
-var validar = function(e){
-  validarNombre(e);
+email.onblur = function () {
+  if (this.value.trim() == '') {
+    this.classList.add('is-invalid');
+    emailfeedback.style.display = "inherit";
+  }
+  else {
+    this.classList.remove('is-invalid');
+    emailfeedback.style.display = "none";
+    emailBadfeedback.style.display = "none";
+  }
 }
 
-formulario.addEventListener("submit", validar);
+mensaje.onblur = function () {
+  if (this.value.trim() == '') {
+    this.classList.add('is-invalid');
+    mensajefeedback.style.display = "inherit";
+  }
+  else {
+    this.classList.remove('is-invalid');
+    mensajefeedback.style.display = "none";
+  }
+}
 
-console.log(boton);
+formulario.onsubmit = function (event) {
+  if (nombre.value.trim() == "" || email.value.trim() == "" || mensaje.value.trim() == "") {
+    alert("Rellena el formulario para poder enviarlo.");
+    event.preventDefault();
+  }
+}
