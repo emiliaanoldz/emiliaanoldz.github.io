@@ -80,6 +80,11 @@ header {
   flex-wrap: wrap;
 }
 
+#me-pic {
+	border-radius: 50%;
+	width: 10%;
+}
+
 footer {
 	background-color: rgba(227, 227, 227, 1.0);
 	font-family: 'Montserrat', sans-serif;
