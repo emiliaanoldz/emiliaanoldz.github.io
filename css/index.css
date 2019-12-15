@@ -6,6 +6,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
 
 header {
   width: 100%;
@@ -83,6 +87,18 @@ header {
 #me-pic {
 	border-radius: 50%;
 	width: 10%;
+}
+
+.btn-light {
+	background-color: #e0e0e0;
+	color: black;
+	transition: transform 160ms ease-in-out;
+}
+.btn {
+	transition: transform 160ms ease-in-out;
+}
+.btn:hover {
+	transform: scale(0.95);
 }
 
 footer {
