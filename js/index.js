@@ -41,9 +41,54 @@ mensaje.onblur = function () {
   }
 }
 
-formulario.onsubmit = function (event) {
+$('#theForm').submit(function (e) { 
+  e.preventDefault();
+  $('#submitLoader').removeClass('d-none');
+  //Capturar datos form
+  var data = {
+    "name":this.name.value,
+    "email":this.email.value,
+    "mensaje":this.mensaje.value
+  };
+
   if (nombre.value.trim() == "" || email.value.trim() == "" || mensaje.value.trim() == "") {
-    alert("Rellena el formulario para poder enviarlo.");
     event.preventDefault();
+    $('#submitLoader').addClass('d-none');
+    Swal.fire({
+      icon: 'error',
+      title: 'Ups...',
+      text: 'Parece que no terminaste de completar el formulario.',
+    })
   }
-}
+  else{
+    fetch('https://submit-form.com/4HedqresISZ6Bfgguq-Xt', {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => {
+        $('#submitLoader').addClass('d-none');
+        Swal.fire(
+            '¡Mensaje Recibido!',
+            'Gracias 🤩',
+            'success'
+        );
+        $('#contact').fadeOut('slow');
+        $('#gracias').removeClass('d-none');
+    })
+    .catch((error) => {
+        $('#submitLoader').addClass('d-none');
+        Swal.fire(
+            'Ups!',
+            `Parece que algo salió mal. Intentalo otra vez. [${error}]`,
+            'error'
+        );
+    });
+  }
+
+});
+

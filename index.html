@@ -13,10 +13,19 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <meta property="og:title" content="Emiliano Vargas">
+    <meta property="og:description" content="Desarrollador Web Full Stack">
+    <meta property="og:image" content="img/me.jpg">
+    <meta property="og:url" content="http://emiliaanoldz.github.io">
+    <meta name="twitter:card" content="img/me.jpg">
+    <meta property="og:site_name" content="Emiliano Vargas - Desarrollador Web Full Stack">
+    <meta name="twitter:image:alt" content="Emiliano Vargas Emoji">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/favicon.png">
     <title>Emiliano Vargas</title>
@@ -59,14 +68,14 @@
       </div>
     </div>
 
-  <main class="container" style="margin-top: 2em;">
+  <main class="container my-3">
     <div class="row" id="second">
       <div class="col-xs-12 col-md-6">
         <h2>Sobre mi</h2>
         <p>Me considero una persona dinámica y creativa, con facilidad de adapatación y capacidad de trabajar en equipo, con iniciativa para resolver problemas eficientemente y lograr las metas pactadas. En lo personal me encanta armar proyectos complicados y rebuscados, gracias a eso descubrí ser un buen autodidacta que aprende rápido y no se detiene hasta conseguir lo que desea.</p>
       </div>
 
-      <div class="second-cards col-xs-12 col-md-6" data-aos="flip-right">
+      <div style="width: 100%;" class="second-cards col-xs-12 col-md-6" data-aos="flip-right">
         <h2>👨‍💻</h2>
         <h2>Full Stack Web Developer</h2>
         <p>Como desarrollador Web lo que mas me apasiona es la libertad para moldear proyectos y contribuir a crear herramientas poderosas.</p>
@@ -93,7 +102,7 @@
       </div>
     </div>
 
-    <div style="margin-left: 0; margin-top: 1em;" class="second-cards col-xs-12 col-md-12" data-aos="fade-up" data-aos-duration="1000">
+    <div class="second-cards col-xs-12 col-md-12 my-3" data-aos="fade-up" data-aos-duration="1000">
       <img id="me-pic" src="img/me.jpg" alt="">
       <h2>Emiliano Vargas</h2>
       <h3>Let's stay in touch!</h3>
@@ -106,11 +115,7 @@
       <div class="col-lg-12">
         <h2>Contacto</h2>
 
-        <form id="theForm" class="" action="https://submit-form.com/4HedqresISZ6Bfgguq-Xt" target="_self">
-          <input type="hidden"
-            name="_redirect"
-            value="emiliaanoldz.github.io/success.html">
-
+        <form id="theForm">
           <div class="form-group">
             <input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
             <div id="nameFeedback" class="invalid-feedback">
@@ -130,9 +135,15 @@
             </div>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-light">Enviar</button>
+            <button type="submit" class="btn btn-light">Enviar <div id="submitLoader" class="spinner-border spinner-border-sm d-none" role="status"></div> </button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div style="width: 100%;" id="gracias" class="col-12 second-cards my-5 d-none" data-aos="fade-up" data-aos-duration="1000">
+      <div class="row">
+        <h4>¡Gracias por el mensaje!</h4>
       </div>
     </div>
 
@@ -147,15 +158,15 @@
           <br>
           using <a target="_blank" href="https://getbootstrap.com">Bootstrap</a> & <a target="_blank" href="https://michalsnik.github.io/aos/">AOS</a>
           <br>
-          by Emiliano Vargas 2019 </span>
+          by Emiliano Vargas <script>document.write(new Date().getFullYear())</script></span>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
