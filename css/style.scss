@@ -1,0 +1,121 @@
+@import 'index.css';
+@import 'mixins';
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("Poppins-Black.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("Poppins-Regular.ttf") format("truetype");
+    font-weight: 500;
+}
+
+.new-site-popup {
+    z-index: 10;
+    padding: 1em;
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    animation: popup 1s ease-in-out;
+    @keyframes popup {
+        from {
+            bottom: -100%;
+        }
+        to {
+            bottom: 25px;
+        }
+    }
+
+    @include sm {
+        bottom: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        background-color: #fafafa;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 1em;
+        border: solid #dbdbdb 1px;
+    }
+
+    .close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+
+        @include sm {
+            top: 35px;
+            right: 35px;
+        }
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include sm {
+            justify-content: start;
+        }
+
+        img {
+            width: 90px;
+    
+            @include sm {
+                margin-bottom: 1.5em;
+                width: 50px;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+
+        @include sm {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        margin-top: 1em;
+        font-size: 16px;
+
+        @include sm {
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .custom-btn {
+        width: 100%;
+
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding: 6px 12px;
+        border: none;
+        background: #FE7360;
+        box-shadow: 0px 4px 50px rgba(254, 115, 96, 0.5);
+        border-radius: 5px;
+    }
+}
+
+.minimize {
+    animation: minimize 1s ease-in-out;
+    @keyframes minimize {
+        from {
+            bottom: 25px;
+        }
+        to {
+            bottom: -100;
+        }
+    }
+}

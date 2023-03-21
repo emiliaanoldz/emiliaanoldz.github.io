@@ -1,0 +1,15 @@
+$mobile-width: 576px;
+$tablet-width: 992px;
+$desktop-width: 1024px;
+
+@mixin sm {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}

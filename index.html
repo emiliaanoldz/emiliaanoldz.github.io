@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png">
     <title>Emiliano Vargas</title>
   </head>
@@ -52,6 +52,31 @@
         </div>
       </nav>
     </header>
+
+    <div class="new-site-popup">
+      <div class="close" id="close-button">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-12 image">
+              <img src="/img/emoji.png" alt="" srcset="">
+            </div>
+            <div class="col-md-6 col-12">
+              <h2>Warning!</h2>
+              <p>You are watching my old portfolio&nbsp;site. <br>
+              Can I take you to a better looking&nbsp;place?</p>
+            </div>
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+              <button class='custom-btn'>
+                <a href="https://www.emilianovargas.com.ar?utm_source=github.io&utm_medium=banner&utm_campaign=redirect_to_new_site">Yes, please</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="first">
       <div class="img img-fluid">
@@ -107,7 +132,7 @@
       <h2>Emiliano Vargas</h2>
       <h3>Let's stay in touch!</h3>
       <button style="margin-bottom: 0.5em;" type="button" class="btn btn-primary"><a target="_blank" href="https://www.linkedin.com/in/emilianovargas/">LinkedIn</a></button>
-      <a target="_blank" href="https://drive.google.com/open?id=1WHF5JUBROTfA60DnNM4fkhNifLEqayvQ">
+      <a target="_blank" href="https://www.emilianovargas.com.ar/?utm_source=github.io&utm_medium=banner&utm_campaign=redirect_to_new_site">
       <button type="button" class="btn btn-light">Ver CV</button></a>
     </div>
 
@@ -169,11 +194,16 @@
   <script src="js/sweetalert2.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
     AOS.init();
+
+    $('#close-button').click(function (e) { 
+      e.preventDefault();
+      $(this).parent().slideUp()
+    });
   </script>
   </body>
 </html>

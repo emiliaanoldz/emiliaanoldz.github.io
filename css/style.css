@@ -1,0 +1,114 @@
+@import 'index.css';
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Black.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.ttf") format("truetype");
+  font-weight: 500;
+}
+.new-site-popup {
+  z-index: 10;
+  padding: 1em;
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  animation: popup 1s ease-in-out;
+}
+@keyframes popup {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .new-site-popup {
+    bottom: 10px;
+  }
+}
+.new-site-popup .wrapper {
+  width: 100%;
+  background-color: #fafafa;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1em;
+  border: solid #dbdbdb 1px;
+}
+.new-site-popup .close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+@media (max-width: 576px) {
+  .new-site-popup .close {
+    top: 35px;
+    right: 35px;
+  }
+}
+.new-site-popup .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .new-site-popup .image {
+    justify-content: start;
+  }
+}
+.new-site-popup .image img {
+  width: 90px;
+}
+@media (max-width: 576px) {
+  .new-site-popup .image img {
+    margin-bottom: 1.5em;
+    width: 50px;
+  }
+}
+.new-site-popup h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+@media (max-width: 576px) {
+  .new-site-popup h2 {
+    font-size: 22px;
+  }
+}
+.new-site-popup p {
+  font-weight: 500;
+  margin-top: 1em;
+  font-size: 16px;
+}
+@media (max-width: 576px) {
+  .new-site-popup p {
+    margin-bottom: 1.5em;
+  }
+}
+.new-site-popup .custom-btn {
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 6px 12px;
+  border: none;
+  background: #FE7360;
+  box-shadow: 0px 4px 50px rgba(254, 115, 96, 0.5);
+  border-radius: 5px;
+}
+
+.minimize {
+  animation: minimize 1s ease-in-out;
+}
+@keyframes minimize {
+  from {
+    bottom: 25px;
+  }
+  to {
+    bottom: -100;
+  }
+}
